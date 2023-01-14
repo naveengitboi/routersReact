@@ -109,3 +109,18 @@ button
     right: 26vw;
     border-radius: 50%;
 }
+
+/* works */
+.worksLinks
+{
+    margin: 2rem 0;
+}
+.worksLinks a
+{
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+    background-color: white;
+    margin:0 1rem ;
+    border-radius: .825rem;
+}

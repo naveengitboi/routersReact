@@ -15,6 +15,7 @@ function Navbar() {
         <ul className='links'>
             <li><NavLink style={addStyles} to="/">Home</NavLink></li>
             <li><NavLink style={addStyles} to="/about">About</NavLink></li>
+            <li><NavLink style={addStyles} to="/work">Work</NavLink></li>
             <li><NavLink style={addStyles} to="/contact">Contact</NavLink></li>
         </ul>
 
