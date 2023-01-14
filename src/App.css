@@ -14,6 +14,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: beige;
+    
 }
 .links 
 {
@@ -37,7 +38,7 @@ li a
 
 section
 {
-    height: 85vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 2rem 30vw;
@@ -73,13 +74,22 @@ input
     min-width: 30vw;
     margin: .85rem 0 2rem;
 }
-
+.btn 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 button 
 {
     padding: .5rem 1.25rem;
     outline: none;
     border: none;
     background-color: rgb(255, 214, 160);
+    font-size: 1rem;
+    cursor: pointer;
+    margin: .85rem 0 0;
 }
 .styleBox 
 {

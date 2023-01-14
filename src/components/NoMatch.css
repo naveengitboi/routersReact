@@ -1,0 +1,29 @@
+.bgNoMatch
+{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.notFoundImg img 
+{
+    width: 500px;
+}
+.notFoundContent
+{
+
+    padding: 3rem;
+}
+.hyperHeading
+{
+    font-size:10rem;
+    padding: 0;
+    letter-spacing: 2.5rem;
+    color: rgb(70, 70, 70);
+}
+.notFoundContent p 
+{
+    font-size: 1.25rem;
+}
