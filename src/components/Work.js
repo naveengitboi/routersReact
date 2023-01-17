@@ -1,12 +1,12 @@
 import React from 'react'
-import { Link, NavLink, Outlet } from 'react-router-dom'
+import {  NavLink, Outlet } from 'react-router-dom'
 function Work() {
   return (
     <>
     <section>
         <div className="worksLinks">
-            <Link to='webdev' >Web Development</Link>
-            <Link to='nonwebdev' >Non-Web work</Link>
+            <NavLink to='webdev' >Web Development</NavLink>
+            <NavLink to='nonwebdev' >Non-Web work</NavLink>
         </div>
         <div className="outletDiv">
             <Outlet/>
