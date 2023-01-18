@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {motion} from 'framer-motion'
+import { divVariants, pageVariants } from './Home'
 function Contact() {
   const constraintsRef = useRef(null)
     let navigate = useNavigate()
@@ -12,8 +13,8 @@ function Contact() {
                 navigate('/mailRecieved')
             }
   return (
-    <section>
-        <form action="submit">
+    <motion.section variants={pageVariants} exit= 'exit'>
+        <motion.form action="submit" variants={divVariants} initial='hidden' animate= 'visible'>
             <div className="nameSection">
                 <label htmlFor="name">Sweet Name</label>
                 <input type="text" id='name' />
@@ -25,13 +26,13 @@ function Contact() {
             </div>
             
             <button type='submit' onClick={handler} >{msg}</button>
-        </form>
+        </motion.form>
             <motion.div className="refContainer" ref={constraintsRef}>
               <motion.div className="styleBox1" drag dragConstraints={constraintsRef} >drag Me</motion.div>
             </motion.div>
-        <div className="styleBox2"></div>
+        <motion.div drag whileDrag={{scale:1.5}} dragConstraints={{top:100, bottom:100,right:100,left:100}} className="styleBox2"></motion.div>
 
-    </section>
+    </motion.section>
   )
 }
 

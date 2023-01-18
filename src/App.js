@@ -10,13 +10,17 @@ import NoMatch from './components/NoMatch'
 import Work from './components/Work'
 import WebDevWork from './components/WebDevWork'
 import NonWebDevWork from './components/NonWebDevWork'
-
+import { AnimatePresence } from 'framer-motion'
+import { useLocation } from 'react-router-dom'
 
 function App() {
+  const location = useLocation()
   return (
     <div className="App">
       <Navbar/>
-      <Routes>
+      <AnimatePresence exitBeforeEnter>
+      <Routes location={location} key ={location.key}>
+        
         <Route path ="/" element ={<Home/>} />
         <Route path='about' element = {<About/>} />
         <Route path='contact' element={<Contact/>}/>
@@ -29,7 +33,9 @@ function App() {
         </Route>
 
         <Route path='*' element = {<NoMatch/>} />
+        
       </Routes>
+      </AnimatePresence>
     </div>
   );
 }
